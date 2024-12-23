@@ -11,4 +11,6 @@
 - https://wiki.ros.org/urdf
 - https://wiki.ros.org/urdf/Tutorials
 - https://wiki.ros.org/urdf/XML
-1. Installing ROS2 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+1. Installing ROS2 https://docs.ros.org/en/jazzy/Installation/Windows-Install-Binary.html
+2. Creating a workspace https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html
+3. 
