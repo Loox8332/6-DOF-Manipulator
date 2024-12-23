@@ -13,4 +13,4 @@
 - https://wiki.ros.org/urdf/XML
 1. Installing ROS2 https://docs.ros.org/en/jazzy/Installation/Windows-Install-Binary.html
 2. Creating a workspace https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html
-3. 
+3. Modelling with Fusion360 https://www.youtube.com/watch?v=_ZFo6wPXjeQ
