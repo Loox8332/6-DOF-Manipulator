@@ -1,0 +1,197 @@
+<?xml version="1.0" ?>
+<robot name="Proto1-CopyForExport" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Proto1-CopyForExport_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Proto1-CopyForExport_description)/urdf/Proto1-CopyForExport.trans" />
+<xacro:include filename="$(find Proto1-CopyForExport_description)/urdf/Proto1-CopyForExport.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0 0.005 5.684341886080801e-18" rpy="0 0 0"/>
+    <mass value="0.27"/>
+    <inertia ixx="0.000227" iyy="0.00045" izz="0.000227" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Base_Rotating_1">
+  <inertial>
+    <origin xyz="0.0023243126051587944 0.04 -1.051392474669863e-17" rpy="0 0 0"/>
+    <mass value="3.395275114157203"/>
+    <inertia ixx="0.003209" iyy="0.00298" izz="0.003258" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.01 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/Base_Rotating_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.01 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/Base_Rotating_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Arm1_1">
+  <inertial>
+    <origin xyz="0.03999999999999999 0.16499999999999998 0.0" rpy="0 0 0"/>
+    <mass value="12.339388252717375"/>
+    <inertia ixx="0.215809" iyy="0.008914" izz="0.216365" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04 -0.05 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/Arm1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04 -0.05 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/Arm1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Arm_2_1">
+  <inertial>
+    <origin xyz="-0.04000000000000001 0.16500000000000004 0.0" rpy="0 0 0"/>
+    <mass value="12.339388252717375"/>
+    <inertia ixx="0.215809" iyy="0.008914" izz="0.216365" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04 -0.38 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/Arm_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04 -0.38 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/Arm_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Head_Sub-Rotation_1_1">
+  <inertial>
+    <origin xyz="0.040000000000000015 0.0023243126051590846 2.6284811866746584e-17" rpy="0 0 0"/>
+    <mass value="3.3952751141572017"/>
+    <inertia ixx="0.00298" iyy="0.003209" izz="0.003258" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04 -0.71 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/Head_Sub-Rotation_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04 -0.71 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/Head_Sub-Rotation_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Head_Sub-Rotation_2_1">
+  <inertial>
+    <origin xyz="-5.551115123125783e-17 0.03767568739484106 -2.683065841207254e-15" rpy="0 0 0"/>
+    <mass value="3.3952751141572017"/>
+    <inertia ixx="0.00298" iyy="0.003209" izz="0.003258" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.08 -0.75 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/Head_Sub-Rotation_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.08 -0.75 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/Head_Sub-Rotation_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Head_1">
+  <inertial>
+    <origin xyz="0.05886046197196568 0.0 -7.107781886797461e-16" rpy="0 0 0"/>
+    <mass value="2.9631780901195146"/>
+    <inertia ixx="0.00192" iyy="0.005324" izz="0.00452" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.12 -0.79 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/Head_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.12 -0.79 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Proto1-CopyForExport_description)/meshes/Head_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="StaticBaseToRotatingBase" type="continuous">
+  <origin xyz="0.0 0.01 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Base_Rotating_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="RotatingBaseToArm1" type="revolute">
+  <origin xyz="0.04 0.04 -0.0" rpy="0 0 0"/>
+  <parent link="Base_Rotating_1"/>
+  <child link="Arm1_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Arm1ToArm2" type="continuous">
+  <origin xyz="0.0 0.33 0.0" rpy="0 0 0"/>
+  <parent link="Arm1_1"/>
+  <child link="Arm_2_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Arm2ToSubHead1" type="continuous">
+  <origin xyz="0.0 0.33 0.0" rpy="0 0 0"/>
+  <parent link="Arm_2_1"/>
+  <child link="Head_Sub-Rotation_1_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="SubHead1ToSubHead2" type="continuous">
+  <origin xyz="0.04 0.04 -0.0" rpy="0 0 0"/>
+  <parent link="Head_Sub-Rotation_1_1"/>
+  <child link="Head_Sub-Rotation_2_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="SubHead2ToHead" type="continuous">
+  <origin xyz="0.04 0.04 0.0" rpy="0 0 0"/>
+  <parent link="Head_Sub-Rotation_2_1"/>
+  <child link="Head_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+</robot>
