@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<robot name="Proto1-CopyForExport" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="StaticBaseToRotatingBase_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="StaticBaseToRotatingBase">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="StaticBaseToRotatingBase_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="RotatingBaseToArm1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="RotatingBaseToArm1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="RotatingBaseToArm1_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Arm1ToArm2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Arm1ToArm2">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Arm1ToArm2_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Arm2ToSubHead1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Arm2ToSubHead1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Arm2ToSubHead1_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="SubHead1ToSubHead2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="SubHead1ToSubHead2">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="SubHead1ToSubHead2_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="SubHead2ToHead_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="SubHead2ToHead">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="SubHead2ToHead_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
